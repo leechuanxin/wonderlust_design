@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html> 
+  <head>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="http://assets.ziggeo.com/css/ziggeo-betajs-player.min.css"/>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="http://assets.ziggeo.com/js/ziggeo-jquery-json2-betajs-player.min.js"></script>
+    <script>ZiggeoApi.token = "a66a10279f51ef5d416edb09c78851ff";</script>
+
+    <!-- Pacifico font -->
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <!-- font awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <a class="testing-for-junwen">Text me the link</a>
+
+    <!-- Check In Bottom Box -->
+    <div class="check-in-holder">
+      <a class="check-in-link" data-toggle="modal" href="#textModal">
+        <div class="check-in-button" data-toggle="modal">
+          Check In
+        </div>
+      </a>
+    </div>
+
+    <!-- Modal window -->
+    <div class="modal fade" id="textModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="check-in-popup">
+              <div class="check-in-method camera">
+                <i class="fa fa-camera fa-4x camera-icon"></i>
+              </div>
+              <div class="check-in-method gallery">
+                <i class="fa fa-picture-o fa-4x gallery-icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
