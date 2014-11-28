@@ -2,6 +2,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     less: {
       development: {
+        options: {
+          strictMath: true,
+          relativeUrls: true,
+          sourceMap: true,
+          sourceMapFilename: 'assets/css/wonderlust.css.map',
+          sourceMapRootpath: '../..'
+        },
         files: {
           // target.css file: source.less file
           "assets/css/wonderlust.css": "assets/less/wonderlust.less"
@@ -22,5 +29,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['watch']);
+  // Compilation tasks
+  grunt.registerTask('default', ['less']);
+  grunt.registerTask('wonderlust', ['less']);
 };
