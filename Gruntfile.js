@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+
   grunt.initConfig({
     less: {
       development: {
@@ -17,19 +18,26 @@ module.exports = function(grunt) {
     },
     watch: {
       styles: {
-        files: ['assets/less/*'], // which files to watch
+        files: 'assets/less/*', // which files to watch
         tasks: ['less'],
         options: {
           nospawn: true
         }
+      }
+    },
+    cssmin: {
+      files: {
+        src: 'assets/css/wonderlust.css',
+        dest: 'assets/css/wonderlust.min.css'
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Compilation tasks
-  grunt.registerTask('default', ['less']);
-  grunt.registerTask('wonderlust', ['less']);
+  grunt.registerTask('default', ['less', 'cssmin']);
+  grunt.registerTask('wonderlust', ['less', 'cssmin']);
 };
