@@ -1,5 +1,3 @@
-#################
-## CSS
-#################
+# Ignore compiled CSS
 
-/assets/css/wonderlust.css
+*.css
