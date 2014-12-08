@@ -1,5 +1,5 @@
 # Project files to ignore
 node_modules
-assets/css/wonderlust.css
-assets/css/wonderlust.min.css
-assets/css/wonderlust.css.map
+css/wonderlust.css
+css/wonderlust.min.css
+css/wonderlust.css.map
