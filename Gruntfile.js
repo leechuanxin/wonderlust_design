@@ -7,18 +7,18 @@ module.exports = function(grunt) {
           strictMath: true,
           relativeUrls: true,
           sourceMap: true,
-          sourceMapFilename: 'assets/css/wonderlust.css.map',
-          sourceMapRootpath: '../..'
+          sourceMapFilename: 'css/wonderlust.css.map',
+          sourceMapRootpath: '..'
         },
         files: {
           // target.css file: source.less file
-          "assets/css/wonderlust.css": "assets/less/wonderlust.less"
+          "css/wonderlust.css": "less/wonderlust.less"
         }
       }
     },
     watch: {
       styles: {
-        files: 'assets/less/*', // which files to watch
+        files: 'less/*', // which files to watch
         tasks: ['less'],
         options: {
           nospawn: true
@@ -27,8 +27,8 @@ module.exports = function(grunt) {
     },
     cssmin: {
       files: {
-        src: 'assets/css/wonderlust.css',
-        dest: 'assets/css/wonderlust.min.css'
+        src: 'css/wonderlust.css',
+        dest: 'css/wonderlust.min.css'
       }
     }
   });
